@@ -1,0 +1,107 @@
+body {
+  width: 90%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background-color: #f0f2f5;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes surgirSuave {
+  from {
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+div {
+  animation: surgirSuave 0.8s ease-out;
+}
+.image {
+  border-radius: 12px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  transition: all 0.3s ease; 
+}
+.image:hover {
+  transform: scale(1.03) translateY(-3px); 
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+}
+.link {
+  background-color: #6750A4; 
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px; 
+  border-radius: 50px; 
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  background-color: #7c66b5; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.tabela {
+  display: inline-block;
+  margin-top: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+  background-color: white;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #6750A4;
+  color: white;
+  letter-spacing: 1px;
+}
+
+tr {
+  transition: background-color 0.2s ease;
+}
+tr:hover {
+  background-color: #f0ebf8;
+}
+div:last-child {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; 
+}
+
+.criterios {
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
